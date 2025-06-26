@@ -19,7 +19,9 @@ public class OfficeItem extends InventoryItem {
     public String generateDetailedDescription() {
         StringBuilder builder = new StringBuilder();
         builder.append("Office Item Description\n");
-        builder.append("Material: ");
+        builder.append("Name: ");
+        builder.append(name);
+        builder.append("\nMaterial: ");
         builder.append(material);
         builder.append("v\nPackage quantity: ");
         builder.append(packageQuantity);

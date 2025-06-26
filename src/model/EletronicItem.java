@@ -19,7 +19,9 @@ public class EletronicItem extends InventoryItem {
     public String generateDetailedDescription() {
         StringBuilder builder = new StringBuilder();
         builder.append("Eletronic Item Description\n");
-        builder.append("Voltage: ");
+        builder.append("Name: ");
+        builder.append(name);
+        builder.append("\nVoltage: ");
         builder.append(voltage);
         builder.append("v\nBrand: ");
         builder.append(brand);
