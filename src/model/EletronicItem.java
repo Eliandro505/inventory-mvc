@@ -27,4 +27,20 @@ public class EletronicItem extends InventoryItem {
         builder.append(identifider);
         return builder.toString();
     }
+
+    public int getVoltage() {
+        return voltage;
+    }
+
+    public void setVoltage(int voltage) {
+        this.voltage = voltage;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 }
