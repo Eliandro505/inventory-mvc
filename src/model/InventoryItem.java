@@ -2,12 +2,22 @@ package model;
 
 import enums.Category;
 
+import java.util.concurrent.LinkedBlockingDeque;
+
 public abstract class InventoryItem <I> {
     protected String name;
     protected double unitPrice;
     protected boolean active;
     protected I identifider;
     Category category;
+
+    public InventoryItem(String name, double unitPrice, boolean active, I identifider, Category category) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.active = active;
+        this.identifider = identifider;
+        this.category = category;
+    }
 
     protected abstract double calculateTotalValue(int quantity);
     protected abstract String generateDetailedDescription();
